@@ -4,4 +4,12 @@ cc_binary(
   srcs = [
     'wheels.cpp',
   ],
+  deps = [
+    '//libraries/glfw/include/GLFW',
+    '//libraries/glfw/src',
+  ],
+  linkopts = [
+    '-framework Cocoa',
+    '-framework OpenGL',
+  ],
 )
