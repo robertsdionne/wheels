@@ -212,6 +212,6 @@ namespace detail
 	/// @}
 }// namespace glm
 
-#include "simd_mat4.inl"
+#include "simd_mat4.inc"
 
 #endif//(GLM_ARCH != GLM_ARCH_PURE)

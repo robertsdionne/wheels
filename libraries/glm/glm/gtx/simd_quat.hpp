@@ -329,7 +329,7 @@ namespace detail
 	/// @}
 }//namespace glm
 
-#include "simd_quat.inl"
+#include "simd_quat.inc"
 
 
 #if (GLM_COMPILER & GLM_COMPILER_VC)

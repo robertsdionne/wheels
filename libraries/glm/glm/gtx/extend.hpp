@@ -64,4 +64,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "extend.inl"
+#include "extend.inc"

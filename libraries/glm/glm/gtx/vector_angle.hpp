@@ -86,4 +86,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "vector_angle.inl"
+#include "vector_angle.inc"

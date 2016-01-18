@@ -58,4 +58,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "scalar_relational.inl"
+#include "scalar_relational.inc"

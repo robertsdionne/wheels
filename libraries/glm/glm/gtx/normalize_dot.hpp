@@ -71,4 +71,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "normalize_dot.inl"
+#include "normalize_dot.inc"

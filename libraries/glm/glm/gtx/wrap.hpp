@@ -76,4 +76,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "wrap.inl"
+#include "wrap.inc"

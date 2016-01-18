@@ -75,4 +75,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_inverse.inl"
+#include "matrix_inverse.inc"

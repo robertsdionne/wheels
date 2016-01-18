@@ -70,4 +70,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "log_base.inl"
+#include "log_base.inc"

@@ -82,4 +82,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "color_space_YCoCg.inl"
+#include "color_space_YCoCg.inc"

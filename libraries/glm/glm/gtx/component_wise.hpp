@@ -81,4 +81,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "component_wise.inl"
+#include "component_wise.inc"

@@ -87,4 +87,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "spline.inl"
+#include "spline.inc"

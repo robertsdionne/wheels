@@ -41,6 +41,6 @@ namespace detail
 }//namespace detail
 }//namespace glm
 
-#include "intrinsic_vector_relational.inl"
+#include "intrinsic_vector_relational.inc"
 
 #endif//GLM_ARCH

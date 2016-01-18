@@ -88,4 +88,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "vector_query.inl"
+#include "vector_query.inc"

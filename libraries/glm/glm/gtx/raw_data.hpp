@@ -73,4 +73,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "raw_data.inl"
+#include "raw_data.inc"

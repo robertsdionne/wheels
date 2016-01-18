@@ -160,4 +160,4 @@ namespace std
 	};
 } // namespace std
 
-#include "hash.inl"
+#include "hash.inc"

@@ -129,4 +129,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "func_exponential.inl"
+#include "func_exponential.inc"

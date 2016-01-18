@@ -65,4 +65,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "perpendicular.inl"
+#include "perpendicular.inc"

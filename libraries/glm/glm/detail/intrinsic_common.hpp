@@ -82,6 +82,6 @@ namespace detail
 }//namespace detail
 }//namespace glm
 
-#include "intrinsic_common.inl"
+#include "intrinsic_common.inc"
 
 #endif//GLM_ARCH

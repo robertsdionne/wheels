@@ -69,6 +69,6 @@ namespace detail
 }//namespace detail
 }//namespace glm
 
-#include "intrinsic_geometric.inl"
+#include "intrinsic_geometric.inc"
 
 #endif//GLM_ARCH

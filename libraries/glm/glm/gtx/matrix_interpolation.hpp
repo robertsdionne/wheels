@@ -86,4 +86,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_interpolation.inl"
+#include "matrix_interpolation.inc"

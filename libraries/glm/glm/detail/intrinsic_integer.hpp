@@ -43,6 +43,6 @@ namespace detail
 }//namespace detail
 }//namespace glm
 
-#include "intrinsic_integer.inl"
+#include "intrinsic_integer.inc"
 
 #endif//GLM_ARCH

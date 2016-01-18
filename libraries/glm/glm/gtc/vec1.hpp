@@ -190,4 +190,4 @@ namespace glm
 
 }// namespace glm
 
-#include "vec1.inl"
+#include "vec1.inc"

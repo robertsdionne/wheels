@@ -156,4 +156,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "compatibility.inl"
+#include "compatibility.inc"

@@ -887,4 +887,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "type_precision.inl"
+#include "type_precision.inc"

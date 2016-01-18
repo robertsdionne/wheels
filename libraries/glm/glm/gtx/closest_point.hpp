@@ -71,4 +71,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "closest_point.inl"
+#include "closest_point.inc"

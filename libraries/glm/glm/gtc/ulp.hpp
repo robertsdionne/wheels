@@ -89,4 +89,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "ulp.inl"
+#include "ulp.inc"

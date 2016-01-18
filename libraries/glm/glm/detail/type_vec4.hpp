@@ -528,5 +528,5 @@ namespace detail
 }//namespace glm
 
 #ifndef GLM_EXTERNAL_TEMPLATE
-#include "type_vec4.inl"
+#include "type_vec4.inc"
 #endif//GLM_EXTERNAL_TEMPLATE

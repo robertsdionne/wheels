@@ -79,4 +79,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "common.inl"
+#include "common.inc"

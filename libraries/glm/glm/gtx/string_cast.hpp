@@ -73,4 +73,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "string_cast.inl"
+#include "string_cast.inc"

@@ -233,4 +233,4 @@ namespace glm
 	/// @}
 } //namespace glm
 
-#include "bitfield.inl"
+#include "bitfield.inc"

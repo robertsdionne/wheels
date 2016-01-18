@@ -74,4 +74,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "gradient_paint.inl"
+#include "gradient_paint.inc"

@@ -72,4 +72,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "handed_coordinate_space.inl"
+#include "handed_coordinate_space.inc"

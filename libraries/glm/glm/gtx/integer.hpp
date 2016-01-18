@@ -98,4 +98,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "integer.inl"
+#include "integer.inc"

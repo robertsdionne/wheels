@@ -221,4 +221,4 @@ namespace detail
 }//namespace detail
 }//namespace glm
 
-//#include "type_gentype.inl"
+//#include "type_gentype.inc"

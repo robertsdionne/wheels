@@ -62,4 +62,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "projection.inl"
+#include "projection.inc"

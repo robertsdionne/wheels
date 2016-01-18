@@ -99,4 +99,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "epsilon.inl"
+#include "epsilon.inc"

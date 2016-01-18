@@ -85,4 +85,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_access.inl"
+#include "matrix_access.inc"

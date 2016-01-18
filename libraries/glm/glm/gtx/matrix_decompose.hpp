@@ -67,4 +67,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_decompose.inl"
+#include "matrix_decompose.inc"

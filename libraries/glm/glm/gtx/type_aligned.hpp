@@ -992,4 +992,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "type_aligned.inl"
+#include "type_aligned.inc"

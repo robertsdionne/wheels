@@ -143,4 +143,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "rotate_vector.inl"
+#include "rotate_vector.inc"

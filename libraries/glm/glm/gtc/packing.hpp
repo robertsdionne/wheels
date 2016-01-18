@@ -475,4 +475,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "packing.inl"
+#include "packing.inc"

@@ -117,4 +117,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "fast_exponential.inl"
+#include "fast_exponential.inc"

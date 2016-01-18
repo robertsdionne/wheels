@@ -25,7 +25,7 @@
 /// THE SOFTWARE.
 ///
 /// @ref core
-/// @file glm/detail/type_tvec4_avx2.inl
+/// @file glm/detail/type_tvec4_avx2.inc
 /// @date 2014-12-01 / 2014-12-01
 /// @author Christophe Riccio
 ///////////////////////////////////////////////////////////////////////////////////

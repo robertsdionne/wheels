@@ -139,4 +139,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "func_geometric.inl"
+#include "func_geometric.inc"

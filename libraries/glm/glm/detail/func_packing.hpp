@@ -194,4 +194,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "func_packing.inl"
+#include "func_packing.inc"

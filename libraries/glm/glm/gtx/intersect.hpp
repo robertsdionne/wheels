@@ -113,4 +113,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "intersect.inl"
+#include "intersect.inc"

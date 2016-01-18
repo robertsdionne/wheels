@@ -229,4 +229,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "func_integer.inl"
+#include "func_integer.inc"

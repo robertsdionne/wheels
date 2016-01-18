@@ -5,8 +5,8 @@ cc_binary(
     'wheels.cpp',
   ],
   deps = [
-    '//libraries/glfw/include/GLFW',
-    '//libraries/glfw/src',
+    '//libraries/glfw',
+    '//libraries/glm',
   ],
   linkopts = [
     '-framework Cocoa',

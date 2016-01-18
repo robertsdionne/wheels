@@ -452,5 +452,5 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "func_common.inl"
+#include "func_common.inc"
 

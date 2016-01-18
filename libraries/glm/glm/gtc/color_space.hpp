@@ -78,4 +78,4 @@ namespace glm
 	/// @}
 } //namespace glm
 
-#include "color_space.inl"
+#include "color_space.inc"

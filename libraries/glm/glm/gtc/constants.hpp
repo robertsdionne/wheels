@@ -202,4 +202,4 @@ namespace glm
 	/// @}
 } //namespace glm
 
-#include "constants.inl"
+#include "constants.inc"

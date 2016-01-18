@@ -69,4 +69,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_cross_product.inl"
+#include "matrix_cross_product.inc"

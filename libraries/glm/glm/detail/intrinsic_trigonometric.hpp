@@ -41,6 +41,6 @@ namespace detail
 }//namespace detail
 }//namespace glm
 
-#include "intrinsic_trigonometric.inl"
+#include "intrinsic_trigonometric.inc"
 
 #endif//GLM_ARCH

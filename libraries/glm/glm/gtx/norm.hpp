@@ -125,4 +125,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "norm.inl"
+#include "norm.inc"

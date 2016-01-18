@@ -101,4 +101,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "fast_trigonometry.inl"
+#include "fast_trigonometry.inc"

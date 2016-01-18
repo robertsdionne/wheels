@@ -200,4 +200,4 @@ namespace glm
 	/// @}
 } //namespace glm
 
-#include "round.inl"
+#include "round.inc"

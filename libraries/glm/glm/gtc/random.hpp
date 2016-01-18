@@ -117,4 +117,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "random.inl"
+#include "random.inc"

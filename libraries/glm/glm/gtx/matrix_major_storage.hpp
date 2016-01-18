@@ -141,4 +141,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_major_storage.inl"
+#include "matrix_major_storage.inc"

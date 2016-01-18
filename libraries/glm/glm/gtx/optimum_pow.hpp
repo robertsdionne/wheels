@@ -76,4 +76,4 @@ namespace gtx
 }//namespace gtx
 }//namespace glm
 
-#include "optimum_pow.inl"
+#include "optimum_pow.inc"

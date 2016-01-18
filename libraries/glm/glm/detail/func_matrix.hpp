@@ -175,4 +175,4 @@ namespace detail
 	/// @}
 }//namespace glm
 
-#include "func_matrix.inl"
+#include "func_matrix.inc"

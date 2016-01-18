@@ -65,4 +65,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "normal.inl"
+#include "normal.inc"

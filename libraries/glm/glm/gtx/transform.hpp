@@ -82,4 +82,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "transform.inl"
+#include "transform.inc"

@@ -1,22 +1,22 @@
 set(NAME glm_dummy)
 
 file(GLOB ROOT_SOURCE *.cpp)
-file(GLOB ROOT_INLINE *.inl)
+file(GLOB ROOT_INLINE *.inc)
 file(GLOB ROOT_HEADER *.hpp)
 file(GLOB ROOT_TEXT ../*.txt)
 file(GLOB ROOT_MD ../*.md)
 file(GLOB ROOT_NAT ../util/glm.natvis)
 
 file(GLOB_RECURSE CORE_SOURCE ./detail/*.cpp)
-file(GLOB_RECURSE CORE_INLINE ./detail/*.inl)
+file(GLOB_RECURSE CORE_INLINE ./detail/*.inc)
 file(GLOB_RECURSE CORE_HEADER ./detail/*.hpp)
 
 file(GLOB_RECURSE GTC_SOURCE ./gtc/*.cpp)
-file(GLOB_RECURSE GTC_INLINE ./gtc/*.inl)
+file(GLOB_RECURSE GTC_INLINE ./gtc/*.inc)
 file(GLOB_RECURSE GTC_HEADER ./gtc/*.hpp)
 
 file(GLOB_RECURSE GTX_SOURCE ./gtx/*.cpp)
-file(GLOB_RECURSE GTX_INLINE ./gtx/*.inl)
+file(GLOB_RECURSE GTX_INLINE ./gtx/*.inc)
 file(GLOB_RECURSE GTX_HEADER ./gtx/*.hpp)
 
 source_group("Text Files" FILES ${ROOT_TEXT} ${ROOT_MD})

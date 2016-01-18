@@ -212,5 +212,5 @@ namespace glm
 }//namespace glm
 
 #ifndef GLM_EXTERNAL_TEMPLATE
-#include "type_mat3x2.inl"
+#include "type_mat3x2.inc"
 #endif

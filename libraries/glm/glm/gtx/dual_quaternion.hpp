@@ -297,4 +297,4 @@ namespace glm
 	/// @}
 } //namespace glm
 
-#include "dual_quaternion.inl"
+#include "dual_quaternion.inc"

@@ -228,4 +228,4 @@ namespace glm
 	/// @}
 } //namespace glm
 
-#include "associated_min_max.inl"
+#include "associated_min_max.inc"

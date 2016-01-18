@@ -90,4 +90,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "rotate_normalized_axis.inl"
+#include "rotate_normalized_axis.inc"

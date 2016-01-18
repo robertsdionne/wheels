@@ -103,4 +103,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_transform_2d.inl"
+#include "matrix_transform_2d.inc"

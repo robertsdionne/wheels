@@ -99,4 +99,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_query.inl"
+#include "matrix_query.inc"

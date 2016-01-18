@@ -62,6 +62,6 @@ namespace detail
 }//namespace detail
 }//namespace glm
 
-#include "intrinsic_matrix.inl"
+#include "intrinsic_matrix.inc"
 
 #endif//GLM_ARCH

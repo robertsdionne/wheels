@@ -133,4 +133,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "transform2.inl"
+#include "transform2.inc"

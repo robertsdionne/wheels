@@ -45,4 +45,4 @@ namespace detail
 }//namespace detail
 }//namespace glm
 
-#include "type_half.inl"
+#include "type_half.inc"

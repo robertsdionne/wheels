@@ -116,5 +116,5 @@ namespace glm
 } //namespace glm
 
 
-#include "bit.inl"
+#include "bit.inc"
 

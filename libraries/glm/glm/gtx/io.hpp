@@ -229,4 +229,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "io.inl"
+#include "io.inc"

@@ -169,4 +169,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "euler_angles.inl"
+#include "euler_angles.inc"

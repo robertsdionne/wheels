@@ -114,4 +114,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "fast_square_root.inl"
+#include "fast_square_root.inc"

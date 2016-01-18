@@ -71,4 +71,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "orthonormalize.inl"
+#include "orthonormalize.inc"

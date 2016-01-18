@@ -131,4 +131,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "reciprocal.inl"
+#include "reciprocal.inc"

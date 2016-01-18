@@ -63,4 +63,4 @@ namespace glm
 	/// @}
 }// namespace glm
 
-#include "mixed_product.inl"
+#include "mixed_product.inc"

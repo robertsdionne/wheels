@@ -391,4 +391,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_transform.inl"
+#include "matrix_transform.inc"

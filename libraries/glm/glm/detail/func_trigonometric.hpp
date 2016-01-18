@@ -202,4 +202,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "func_trigonometric.inl"
+#include "func_trigonometric.inc"

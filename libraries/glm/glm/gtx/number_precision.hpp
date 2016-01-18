@@ -83,4 +83,4 @@ namespace gtx
 }//namespace gtx
 }//namespace glm
 
-#include "number_precision.inl"
+#include "number_precision.inc"

@@ -89,4 +89,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "std_based_type.inl"
+#include "std_based_type.inc"

@@ -570,7 +570,7 @@ namespace detail
 	/// @}
 }//namespace glm
 
-#include "simd_vec4.inl"
+#include "simd_vec4.inc"
 
 #if (GLM_COMPILER & GLM_COMPILER_VC)
 #	pragma warning(pop)

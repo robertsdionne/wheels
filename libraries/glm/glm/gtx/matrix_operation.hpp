@@ -110,4 +110,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "matrix_operation.inl"
+#include "matrix_operation.inc"

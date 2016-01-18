@@ -70,4 +70,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "polar_coordinates.inl"
+#include "polar_coordinates.inc"
