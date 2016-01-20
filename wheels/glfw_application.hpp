@@ -11,7 +11,8 @@ namespace wheels {
 
 class GlfwApplication : public Application {
 public:
-  GlfwApplication() = default;
+  GlfwApplication(int argument_count, char *arguments[]):
+      argument_count(argument_count), arguments(arguments) {}
 
   virtual ~GlfwApplication() = default;
 
@@ -21,6 +22,7 @@ public:
 
   virtual int Run() override {
     assert(glfwInit());
+
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
@@ -30,7 +32,6 @@ public:
     assert(window);
 
     glfwMakeContextCurrent(window);
-
     std::cout << glGetString(GL_VERSION) << std::endl;
 
     glClearColor(0., 0., 0., 0.);
@@ -46,6 +47,9 @@ public:
     return 0;
   }
 
+private:
+  int argument_count;
+  char **arguments;
   GLFWwindow *window;
 };
 
