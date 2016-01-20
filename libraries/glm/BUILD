@@ -1,8 +1,14 @@
 
 cc_library(
   name = 'glm',
-  deps = [
-    '//libraries/glm/glm',
+  srcs = glob([
+    'glm/**/*.inc',
+  ]),
+  hdrs = glob([
+    'glm/**/*.hpp',
+  ]),
+  includes = [
+    '.',
   ],
   visibility = [
     '//visibility:public'
