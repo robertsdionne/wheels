@@ -1,18 +1,19 @@
 #ifndef WHEELS_GLFW_APPLICATION_HPP_
 #define WHEELS_GLFW_APPLICATION_HPP_
 
+#include <GLFW/glfw3.h>
 #include <cassert>
 #include <iostream>
 
-#include "libraries/glfw/include/GLFW/glfw3.h"
 #include "wheels/application.hpp"
+#include "wheels/renderer.hpp"
 
 namespace wheels {
 
 class GlfwApplication : public Application {
 public:
-  GlfwApplication(int argument_count, char *arguments[]):
-      argument_count(argument_count), arguments(arguments) {}
+  GlfwApplication(int argument_count, char *arguments[], Renderer &&renderer):
+      argument_count(argument_count), arguments(arguments), renderer(renderer) {}
 
   virtual ~GlfwApplication() = default;
 
@@ -34,11 +35,11 @@ public:
     glfwMakeContextCurrent(window);
     std::cout << glGetString(GL_VERSION) << std::endl;
 
-    glClearColor(0., 0., 0., 0.);
+    renderer.Change(kWidth, kHeight);
+    renderer.Create();
 
     while (!glfwWindowShouldClose(window)) {
-      glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+      renderer.Render();
       glfwSwapBuffers(window);
       glfwPollEvents();
     }
@@ -50,6 +51,7 @@ public:
 private:
   int argument_count;
   char **arguments;
+  Renderer &renderer;
   GLFWwindow *window;
 };
 

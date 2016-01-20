@@ -16,6 +16,13 @@ cc_library(
   ],
 )
 
+cc_library(
+  name = 'renderer',
+  srcs = [
+    'renderer.hpp',
+  ],
+)
+
 cc_binary(
   name = 'wheels',
   srcs = [
@@ -23,11 +30,22 @@ cc_binary(
   ],
   deps = [
     ':glfw_application',
+    ':wheels_renderer',
     '//libraries/glfw',
     '//libraries/glm',
   ],
   linkopts = [
     '-framework Cocoa',
     '-framework OpenGL',
+  ],
+)
+
+cc_library(
+  name = 'wheels_renderer',
+  srcs = [
+    'wheels_renderer.hpp',
+  ],
+  deps = [
+    ':renderer',
   ],
 )
