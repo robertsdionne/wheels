@@ -6,6 +6,7 @@
 #include <iostream>
 
 #include "wheels/application.hpp"
+#include "wheels/joystick.hpp"
 #include "wheels/renderer.hpp"
 
 namespace wheels {
@@ -13,7 +14,7 @@ namespace wheels {
 class GlfwApplication : public Application {
 public:
   GlfwApplication(int argument_count, char *arguments[], Renderer &&renderer):
-      argument_count(argument_count), arguments(arguments), renderer(renderer) {}
+      argument_count(argument_count), arguments(arguments), renderer(renderer), joystick(GLFW_JOYSTICK_1) {}
 
   virtual ~GlfwApplication() = default;
 
@@ -40,6 +41,8 @@ public:
 
     while (!glfwWindowShouldClose(window)) {
       renderer.Render();
+      std::cout << joystick.GetAxis(Joystick::Axis::kLeftX) << std::endl;
+      joystick.Update();
       glfwSwapBuffers(window);
       glfwPollEvents();
     }
@@ -52,6 +55,7 @@ private:
   int argument_count;
   char **arguments;
   Renderer &renderer;
+  Joystick joystick;
   GLFWwindow *window;
 };
 

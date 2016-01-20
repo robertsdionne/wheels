@@ -13,6 +13,20 @@ cc_library(
   ],
   deps = [
     ':application',
+    ':joystick',
+    '//libraries/glfw',
+  ],
+)
+
+cc_library(
+  name = 'joystick',
+  srcs = [
+    'joystick.cpp',
+    'joystick.hpp',
+  ],
+  deps = [
+    '//libraries/glfw',
+    '//libraries/glm',
   ],
 )
 
@@ -31,8 +45,6 @@ cc_binary(
   deps = [
     ':glfw_application',
     ':wheels_renderer',
-    '//libraries/glfw',
-    '//libraries/glm',
   ],
   linkopts = [
     '-framework Cocoa',
@@ -47,5 +59,6 @@ cc_library(
   ],
   deps = [
     ':renderer',
+    '//libraries/glfw',
   ],
 )
