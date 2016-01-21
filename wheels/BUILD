@@ -7,6 +7,16 @@ cc_library(
 )
 
 cc_library(
+  name = 'buffers',
+  srcs = [
+    'buffers.hpp',
+  ],
+  deps = [
+    '//libraries/glfw',
+  ],
+)
+
+cc_library(
   name = 'file',
   srcs = [
     'file.hpp',
@@ -84,6 +94,7 @@ cc_library(
     'wheels_renderer.hpp',
   ],
   deps = [
+    ':buffers',
     ':renderer',
     ':shaders',
     '//libraries/glfw',

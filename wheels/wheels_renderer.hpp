@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 #include <vector>
 
+#include "wheels/buffers.hpp"
 #include "wheels/renderer.hpp"
 #include "wheels/shaders.hpp"
 
@@ -28,12 +29,12 @@ public:
     auto fragment_shader = CompileShader(GL_FRAGMENT_SHADER, "wheels/fragment_shader.glsl");
     program = LinkProgram(vertex_shader, fragment_shader);
 
-    auto quad = vector<float>{
+    buffer = MakeArrayBuffer<float>(GL_STATIC_DRAW, {
       -1., -1., -1.,
       1., -1., -1.,
       -1., 1., -1.,
       1., 1., -1.,
-    };
+    });
   }
 
   virtual void Render() override {
