@@ -7,6 +7,13 @@ cc_library(
 )
 
 cc_library(
+  name = 'file',
+  srcs = [
+    'file.hpp',
+  ],
+)
+
+cc_library(
   name = 'glfw_application',
   srcs = [
     'glfw_application.hpp',
@@ -45,6 +52,17 @@ cc_library(
   ],
 )
 
+cc_library(
+  name = 'shaders',
+  srcs = [
+    'shaders.hpp',
+  ],
+  deps = [
+    ':file',
+    '//libraries/glfw',
+  ],
+)
+
 cc_binary(
   name = 'wheels',
   srcs = [
@@ -67,6 +85,11 @@ cc_library(
   ],
   deps = [
     ':renderer',
+    ':shaders',
     '//libraries/glfw',
+  ],
+  data = [
+    'fragment_shader.glsl',
+    'vertex_shader.glsl',
   ],
 )

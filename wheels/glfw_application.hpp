@@ -41,9 +41,8 @@ public:
 
     while (!glfwWindowShouldClose(window)) {
       renderer.Render();
-      std::cout << joystick.GetAxis(Joystick::Axis::kLeftX) << std::endl;
-      joystick.Update();
       glfwSwapBuffers(window);
+      joystick.Update();
       glfwPollEvents();
     }
 
