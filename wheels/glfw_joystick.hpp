@@ -17,7 +17,7 @@ using std::string;
 
 class GlfwJoystick : public Joystick {
 public:
-  GlfwJoystick(int joystick_id): joystick_id(joystick_id) {}
+  GlfwJoystick(int joystick_id=GLFW_JOYSTICK_1): joystick_id(joystick_id) {}
 
   virtual ~GlfwJoystick() = default;
 

@@ -1,5 +1,7 @@
 #version 410
 
+uniform vec3 translate;
+
 in vec3 unnormalized_ray;
 
 out vec4 color;
@@ -40,7 +42,7 @@ void main() {
 }
 
 float DistanceFrom(vec3 position) {
-  vec3 q = position + vec3(0., 0., 10.);
+  vec3 q = position + translate + vec3(0., 0., 10.);
   return length(q) - 1.;
 }
 

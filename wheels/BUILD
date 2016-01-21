@@ -80,6 +80,7 @@ cc_binary(
   ],
   deps = [
     ':glfw_application',
+    ':glfw_joystick',
     ':wheels_renderer',
   ],
   defines = [
@@ -98,6 +99,7 @@ cc_library(
   ],
   deps = [
     ':buffers',
+    ':joystick',
     ':renderer',
     ':shaders',
     '//libraries/glfw',

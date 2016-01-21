@@ -13,8 +13,8 @@ namespace wheels {
 
 class GlfwApplication : public Application {
 public:
-  GlfwApplication(int argument_count, char *arguments[], Renderer &&renderer):
-      argument_count(argument_count), arguments(arguments), renderer(renderer), joystick(GLFW_JOYSTICK_1) {}
+  GlfwApplication(int argument_count, char *arguments[], Renderer &renderer, GlfwJoystick &joystick):
+      argument_count(argument_count), arguments(arguments), renderer(renderer), joystick(joystick) {}
 
   virtual ~GlfwApplication() = default;
 
@@ -41,6 +41,7 @@ public:
     renderer.Change(framebuffer_width, framebuffer_height);
 
     renderer.Create();
+    glfwSwapInterval(1);
 
     while (!glfwWindowShouldClose(window)) {
       renderer.Render();
@@ -57,7 +58,7 @@ private:
   int argument_count;
   char **arguments;
   Renderer &renderer;
-  GlfwJoystick joystick;
+  GlfwJoystick &joystick;
   GLFWwindow *window;
 };
 
