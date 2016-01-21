@@ -6,7 +6,7 @@
 #include <iostream>
 
 #include "wheels/application.hpp"
-#include "wheels/joystick.hpp"
+#include "wheels/glfw_joystick.hpp"
 #include "wheels/renderer.hpp"
 
 namespace wheels {
@@ -55,7 +55,7 @@ private:
   int argument_count;
   char **arguments;
   Renderer &renderer;
-  Joystick joystick;
+  GlfwJoystick joystick;
   GLFWwindow *window;
 };
 

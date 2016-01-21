@@ -13,8 +13,20 @@ cc_library(
   ],
   deps = [
     ':application',
+    ':glfw_joystick',
+    '//libraries/glfw',
+  ],
+)
+
+cc_library(
+  name = 'glfw_joystick',
+  srcs = [
+    'glfw_joystick.hpp',
+  ],
+  deps = [
     ':joystick',
     '//libraries/glfw',
+    '//libraries/glm',
   ],
 )
 
@@ -23,10 +35,6 @@ cc_library(
   srcs = [
     'joystick.cpp',
     'joystick.hpp',
-  ],
-  deps = [
-    '//libraries/glfw',
-    '//libraries/glm',
   ],
 )
 
