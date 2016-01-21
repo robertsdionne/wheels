@@ -18,6 +18,12 @@ GLuint MakeArrayBuffer(GLenum usage, const vector<F> &data) {
   return buffer;
 }
 
+GLuint MakeVertexArray(GLuint buffer) {
+  GLuint vertex_array;
+  glGenVertexArrays(1, &vertex_array);
+  return vertex_array;
+}
+
 }  // namespace wheels
 
 #endif  // WHEELS_BUFFERS_HPP_

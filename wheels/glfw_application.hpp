@@ -36,7 +36,10 @@ public:
     glfwMakeContextCurrent(window);
     std::cout << glGetString(GL_VERSION) << std::endl;
 
-    renderer.Change(kWidth, kHeight);
+    int framebuffer_width, framebuffer_height;
+    glfwGetFramebufferSize(window, &framebuffer_width, &framebuffer_height);
+    renderer.Change(framebuffer_width, framebuffer_height);
+
     renderer.Create();
 
     while (!glfwWindowShouldClose(window)) {

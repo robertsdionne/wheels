@@ -17,9 +17,9 @@ cc_library(
 )
 
 cc_library(
-  name = 'file',
+  name = 'files',
   srcs = [
-    'file.hpp',
+    'files.hpp',
   ],
 )
 
@@ -68,7 +68,7 @@ cc_library(
     'shaders.hpp',
   ],
   deps = [
-    ':file',
+    ':files',
     '//libraries/glfw',
   ],
 )
@@ -81,6 +81,9 @@ cc_binary(
   deps = [
     ':glfw_application',
     ':wheels_renderer',
+  ],
+  defines = [
+    'GLFW_INCLUDE_GLCOREARB=1',
   ],
   linkopts = [
     '-framework Cocoa',

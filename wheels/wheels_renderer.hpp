@@ -35,14 +35,24 @@ public:
       -1., 1., -1.,
       1., 1., -1.,
     });
+
+    vertex_array = MakeVertexArray(buffer);
   }
 
   virtual void Render() override {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    glUseProgram(program);
+    glBindVertexArray(vertex_array);
+    glBindBuffer(GL_ARRAY_BUFFER, buffer);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    glDisableVertexAttribArray(0);
   }
 
 private:
-  GLuint buffer, program;
+  GLuint buffer, program, vertex_array;
 };
 
 }  // namespace wheels
