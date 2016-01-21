@@ -2,11 +2,14 @@
 #define WHEELS_WHEELS_RENDERER_HPP_
 
 #include <GLFW/glfw3.h>
+#include <vector>
 
 #include "wheels/renderer.hpp"
 #include "wheels/shaders.hpp"
 
 namespace wheels {
+
+using std::vector;
 
 class WheelsRenderer : public Renderer {
 public:
@@ -21,8 +24,16 @@ public:
   virtual void Create() override {
     glClearColor(0., 0., 0., 0.);
 
-    vertex_shader = CompileShader(GL_VERTEX_SHADER, "wheels/vertex_shader.glsl");
-    fragment_shader = CompileShader(GL_FRAGMENT_SHADER, "wheels/fragment_shader.glsl");
+    auto vertex_shader = CompileShader(GL_VERTEX_SHADER, "wheels/vertex_shader.glsl");
+    auto fragment_shader = CompileShader(GL_FRAGMENT_SHADER, "wheels/fragment_shader.glsl");
+    program = LinkProgram(vertex_shader, fragment_shader);
+
+    auto quad = vector<float>{
+      -1., -1., -1.,
+      1., -1., -1.,
+      -1., 1., -1.,
+      1., 1., -1.,
+    };
   }
 
   virtual void Render() override {
@@ -30,7 +41,7 @@ public:
   }
 
 private:
-  GLuint vertex_shader, fragment_shader;
+  GLuint buffer, program;
 };
 
 }  // namespace wheels
