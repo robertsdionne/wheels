@@ -25,9 +25,9 @@ public:
   virtual void Create() override {
     glClearColor(0., 0., 0., 0.);
 
-    auto vertex_shader = CompileShader(GL_VERTEX_SHADER, "wheels/vertex_shader.glsl");
-    auto fragment_shader = CompileShader(GL_FRAGMENT_SHADER, "wheels/fragment_shader.glsl");
-    program = LinkProgram(vertex_shader, fragment_shader);
+    program = LinkProgram(
+        CompileShader(GL_VERTEX_SHADER, "wheels/vertex_shader.glsl"),
+        CompileShader(GL_FRAGMENT_SHADER, "wheels/fragment_shader.glsl"));
 
     buffer = MakeArrayBuffer<float>(GL_STATIC_DRAW, {
       -1., -1., -1.,
